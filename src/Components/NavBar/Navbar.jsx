@@ -20,6 +20,10 @@ function Navbar() {
         <NavLink to="/about" className={customClass}>
           About
         </NavLink>
+        <NavLink to="/contact" className={customClass}>
+          Contact
+        </NavLink>
+        <NavLink to="*"></NavLink>
       </nav>
     </div>
   );

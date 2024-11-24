@@ -5,6 +5,7 @@ import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import Main from "../Main/Main";
 import About from "../About/About";
+import PageNotFound from "../NotFound/NotFound";
 
 function App() {
   return (
@@ -12,10 +13,12 @@ function App() {
       <Header />
       <nav>
         <NavLink to="/about" />
+        <NavLink to="/contact" />
       </nav>
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/about" element={<About />} />
+        <Route path="*" element={<PageNotFound />} />
       </Routes>
       <Footer />
     </div>
