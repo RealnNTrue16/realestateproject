@@ -1,6 +1,6 @@
 .navbar {
   display: flex;
-  color: white;
+  color: black;
   margin: 0 15px 0 15px;
 }
 
@@ -12,6 +12,14 @@
   font-family: cursive;
   display: flex;
   gap: 30px;
+}
+
+.navbar__link {
+  color: black;
+}
+
+.navbar__link-active {
+  color: red;
 }
 
 .navbar__image {
